@@ -1,0 +1,11 @@
+#Write yaml for a job that will run the busybox image and will print out its environment variables and shut down#
+apiVersion: v1
+kind: Pod
+metadata:
+  name: env-dump
+spec:
+  containers:
+  - name: busybox
+    image: busybox
+    command:
+      - env
