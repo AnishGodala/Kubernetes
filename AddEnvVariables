@@ -1,0 +1,18 @@
+#Add the environment variables to the pod definition
+apiVersion: v1
+kind: Pod
+metadata:
+  name: env-dump
+spec:
+  containers:
+  - name: busybox
+    image: busybox
+    command:
+      - env
+    env:
+    - name: Employee_NAME
+      value: "Your Name"
+    - name: CLIENT
+      value: "Insurence"
+    - name: KUBER
+      value: "is awesome"
