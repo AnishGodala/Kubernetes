@@ -1,0 +1,3 @@
+#Applications in Kubernetes are self-healing because of the way Kubernetes constantly monitors the cluster 
+and compares it with the specifications#
+kubectl scale deployment/nginx-deployment --replicas="_"
